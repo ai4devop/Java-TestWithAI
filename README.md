@@ -10,7 +10,7 @@ Ce repository s'adresse aux développeurs de tous niveaux qui souhaitent intégr
 
 ## Comment Utiliser ce repository
 
-Chaque branche est numérotté par ordre croissant 01, 02, 0n... suivi du nom `exercice` et son numéro 1,2, n...
+Chaque branche est numérotée par ordre croissant 01, 02, 0n... suivi du nom `exercice` et son numéro 1,2, n...
 Par exemple le premier exercice se trouve sur la branche [01_exercice1] et sa solution se trouve sur [02_exercice1_solution]
 
 [01_exercice1]: https://gitlab.groupeonepoint.com/codeshare/trainings/ai4dev/jstestingwithai/-/tree/01_exercice1?ref_type=heads
@@ -20,45 +20,47 @@ Veuillez cloner ce projet avec la commande qui vous convient.
 Initier ce projet passe par les commandes suivantes installer les dépendences via:
 
 ```bash
-A AJOUTER
+git clone <A AJOUTER L'URL DU REPO FINAL'>
 ```
 
 Puis lancer le fichier de test via:
 
 ```bash
-A AJOUTER
+mvn clean test
 ```
 
 Jest est le framework de test utilisé dans ce projet. Il est configuré pour exécuter les tests automatiquement lorsque vous lancez la commande `A AJOUTER`.
 
 Ce dépôt contient plusieurs branches numérotées, chacune dédiée à un exercice spécifique :
 
-1. **Fonction reverseString** | **01_exercice1** | **20 minutes** - Implémentez des tests unitaires en utilisant des suggestions générées par l'IA.
+1. **StringHelper** | **01_exercice1** | **20 minutes** - Implémentez des tests unitaires en utilisant des suggestions générées par l'IA.
 
-La fonction se situe dans le fichier utils.ts et les tests unitaires dans le fichier utils.test.ts. N'oubliez pas la commande ci-dessous pour lancer vos tests:
-
-```bash
-A AJOUTER
-```
+    L'exercise numéro 1 consiste en la rédaction de tests unitaires pour 3 méthodes génriques déjà pré-écrites
+    Les tests devront être impléntés dans la classe `StringHelperTest` et vous pourrez vérifier leur validité avec la commande ci-dessous
+    ```bash
+    mvn test
+    ```
 
 Ces consignes sont valables pour tous les exercices
 
-2. **Fonction formatDate** - **03_exercice2** - **20 minutes** - Implémentez la fonction formatDate grâce aux tests présents dans le fichier utils.test.ts. Cette exercice vous sert à tester le potentiel de votre IA générative concernantl a pratique du TDD.
+2. **TDD, Fonctions formatDateTime** - **02_exercice2** - **30 minutes** \
+    Implémentez les fonctions formatDate et formatDateTime grâce aux tests présents dans le fichier DateTimeHelperTest. Cet exercice vous sert à tester le potentiel de votre IA générative concernant a pratique du TDD.
 
-N'hésitez pas à améliorer les tests unitaires.
+    N'hésitez pas à améliorer les tests unitaires.
 
-3. **Fonction fetchData** - **05_exercice3** - **20 minutes** - Mockez un appel d'API et élaborez une stratégie de test en envisageant tous les cas d'utilisation possibles.
+3. **Mocking** - **03_exercice3** - **20 minutes** \
+   Vous aurez une application de gestion de comptes clients avec un UserRepository pour la récupération des users et des services pour des fonctionnalités basiques tels que un find et create. Il faudra écire des test unitaires pour couvrir ces fonctions, leur cas de bords en simulant les appels à UserRepository.
 
 Pour travailler sur un exercice, basculez vers la branche pertinente et suivez les instructions fournies dans le README de la branche ou commentées dans le code.
 
 ## Exercices et Leur Intérêt
 
-1. **Fonction reverseString** : Cet exercice développe la capacité d'utiliser l'IA pour générer rapidement des tests unitaires efficaces. En automatisant la création de tests, les développeurs logiciels peuvent se concentrer sur l'écriture de code de haute qualité et explorer les cas limites qui pourraient ne pas être immédiatement apparents. L'exercice améliore la productivité en montrant comment l'IA peut prendre en charge les tâches de création de tests routinières, permettant un processus de test plus robuste.
+1. **Exercice Test unitaires** : Cet exercice développe la capacité d'utiliser l'IA pour générer rapidement des tests unitaires efficaces. En automatisant la création de tests, les développeurs logiciels peuvent se concentrer sur l'écriture de code de haute qualité et explorer les cas limites qui pourraient ne pas être immédiatement apparents. L'exercice améliore la productivité en montrant comment l'IA peut prendre en charge les tâches de création de tests routinières, permettant un processus de test plus robuste.
 
-2. **Fonction formatDate** : Cette tâche met l'accent sur la pratique du TDD via une IA générative et estimer la précision de cette dernière concernant cette pratique de clean code. Elle démontre comment l'IA peut produire du code à partir de test unitaires et itérer sur leur complétion pour garantire le comportement de cette fonction selon différents scénarios définis dans vos test unitaires.
+2. **Exercice TDD** : Cette tâche met l'accent sur la pratique du TDD via une IA générative et estimer la précision de cette dernière concernant cette pratique de clean code. Elle démontre comment l'IA peut produire du code à partir de test unitaires et itérer sur leur complétion pour garantire le comportement de cette fonction selon différents scénarios définis dans vos test unitaires.
 
-3. **Fonction fetchData** : En se concentrant sur une stratégie de mock pour les appels d’API, cet exercice encourage une inspection approfondie de tous les états possibles de l'application, tels que la récupération réussie des données, la gestion des erreurs d'API et les délais d'attente. Cela augmente la capacité d’un développeur à utiliser l'IA pour identifier et couvrir tous les cas potentiels, conduisant à des solutions logicielles résilientes et fiables.
+3. **Exercise Test unitaires + mocking** : En se concentrant sur une stratégie de mock pour les appels aux répository, cet exercice encourage une inspection approfondie de tous les états possibles de l'application, tels que la récupération réussie des données, la gestion des erreurs d'API et les délais d'attente. Cela augmente la capacité d’un développeur à utiliser l'IA pour identifier et couvrir tous les cas potentiels, conduisant à des solutions logicielles résilientes et fiables.
 
 ## Conclusion
 
-S'engager dans ces exercices non seulement améliorera vos compétences en matière de tests unitaires, mais vous donnera également un aperçu sur la manière dont l'IA peut être un puissant allié. Chaque branche d'exercice de ce repository dispose d'une branche de solution à consulter uniquement si vous avez besoin d'aide et/ou si vous avez épuisez le temps imparti à la réalisation de cette exercice.
+S'engager dans ces exercices non seulement améliorera vos compétences en matière de tests unitaires, mais vous donnera également un aperçu sur la manière dont l'IA peut être un puissant allié. Chaque branche d'exercice de ce repository dispose d'une branche de solution à consulter uniquement si vous avez besoin d'aide et/ou si vous avez épuisé le temps imparti à la réalisation de cet exercice.
