@@ -48,7 +48,7 @@ Implémentez des tests unitaires pour trois méthodes déjà écrites en utilisa
 ```bash
 mvn test
 ```
-### 2. ⏳ FormatDateTimeHelper | 02_exercice | ~30 minutes
+### 2. ⏳ FormatDateTimeHelper | 02_exercice | ~20 minutes
 Implémentez les fonctions formatDate et formatDateTime en suivant les tests du fichier DateTimeHelperTest. Cet exercice met en valeur l’application du TDD avec l'IA. Améliorez les tests au besoin pour renforcer les validations.
 
 ### 3. 👥 Application CRM | 03_exercice | ~20 minutes

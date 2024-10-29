@@ -1,4 +1,4 @@
-# 📝 Exercice 2 -  TDD ~30 minutes
+# 📝 Exercice 2 -  TDD ~20 minutes
 
 ## 🎯 Objectif
 Cet exercice est conçu pour vous familiariser avec l'utilisation des outils d'IA dans la pratique du développement piloté par les tests (TDD).
