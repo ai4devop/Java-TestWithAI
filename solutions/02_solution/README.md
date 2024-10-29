@@ -1,4 +1,4 @@
-# 📝 Exercice 2 -  TDD ~30 minutes
+# 💡 Exercice 2 - TDD
 
 ## 🎯 Objectif
 Cet exercice est conçu pour vous familiariser avec l'utilisation des outils d'IA dans la pratique du développement piloté par les tests (TDD).
@@ -6,13 +6,6 @@ Cet exercice est conçu pour vous familiariser avec l'utilisation des outils d'I
 Pour rappel, le TDD consiste à rédiger les tests unitaires avant même d'écrire le code. Ces tests définissent le comportement attendu des fonctions. Une fois le code implémenté, les tests permettent de valider son bon fonctionnement.
 
 Dans cet exercice, vous travaillerez avec la classe `DateTimeHelper`, qui offre des fonctions utilitaires pour le traitement des dates avec ou sans heures. Vous allez d'abord rédiger les tests pour les fonctions souhaitées, puis implémenter le code des fonctions.
-
-## 🛠️ Instructions
-
-1. Clonez ce projet.
-2. Rendez-vous dans le fichier `DateTimeHelper` pour prendre connaissance des squelettes de méthodes créés, ainsi que dans `DateTimeHelperTest` pour voir les tests déjà implémentés.
-3. Suivez les étapes ci-dessous pour implémenter les différentes fonctions.
-4. Lancez les tests existants et ceux que vous aurez écrits.
 
 ## 📝 Étapes
 
@@ -47,14 +40,13 @@ Dans cette seconde partie, vous allez créer des tests pour les méthodes de tra
   - Écrivez un test `testFormatDateTime_WithPattern` qui vérifie qu’une `LocalDateTime` donnée et un modèle de format (par ex. `dd/MM/yyyy HH:mm:ss`) produisent une chaîne formatée, par exemple _"31/08/2024 08:46:00"_.
   - Implémentez ensuite la fonction `formatDateTime(LocalDateTime dateTime, String pattern)` pour faire passer le test.
 
+## ✅ Solution
+Vous trouverez dans les classes `DateTimeHelper` et `DateTimeHelperTest` les différents fonctions et tests rédigés dans le cadre de cet exercice
+
+
 ### 🚀 Comment exécuter les tests
 Lancez Maven dans le terminal pour exécuter les tests :
 
 ```bash
 mvn clean test
 ```
-
-## ✅ Critères de validation :
-- Les fonctions de traitement pour LocalDate sont implémentées et les tests existants réussissent.
-- Les tests et fonctions pour le traitement de LocalDateTime sont implémentés et réussissent.
-

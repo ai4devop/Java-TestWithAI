@@ -1,4 +1,4 @@
-# 📝 Exercice 3 - TU + Mocking ~ 20 minutes
+# 💡 Exercice 3 - TU + Mocking
 
 ## 🎯 Objectifs
 Dans cet exercice, vous travaillerez avec une petite application de gestion de comptes clients, _crm_. Cette application est un POC simplifié, avec un nombre limité de fonctionnalités.
@@ -26,39 +26,12 @@ Dans la classe `UserService`, deux méthodes sont déjà implémentées : la rec
   - Une fois cette méthode implémentée, rédigez les tests unitaires pour couvrir ces cas dans `UserServiceTest`.
 
 
+## ✅ Solution
+Vous trouverez dans les classes `UserServiceTest` et `UserService` les différents tests unitaires et fonctions attendus.
+
 ### 🚀 Comment exécuter les tests
 Lancez Maven dans le terminal pour exécuter les tests :
 
 ```bash
 mvn clean test
 ```
-
-## ✅ Critères de validation :
-
-- Les tests unitaires rédigés passent avec succès.
-- Les tests couvrent les différentes règles, y compris la vérification de l'unicité du numéro de téléphone.
-
-### 💡 Conseils pour Mockito :
-
-Utilisez cette cheatsheet pour vous aider à mocker certains comportements courants :
-
-```java
-// Simuler un retour pour une recherche par ID
-when(userRepository.findById(1L)).thenReturn(new User(...));
-
-// Vérifier si une fonction est appelée un certain nombre de fois
-verify(userRepository, times(n)).findById(1L);
-
-// Vérifier que la fonction n'est jamais appelée
-verify(userRepository, never()).deleteUser(1L);
-
-// Vérifier la valeur d'un argument d'entrée
-verify(userRepository).save(argThat(user -> user.getName().equals("John")));
-
-// Vérifier que deux objets sont égaux
-assertEquals(expected, actual);
-
-// Récupérer une exception attendue
-assertThrows(ExpectedException.class, () -> {
-    // Code qui doit déclencher une exception
-});

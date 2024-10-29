@@ -1,4 +1,4 @@
-# 📝 Exercice 1- Tests Unitaires ~ 15 minutes
+# 💡 Exercice 1- Tests Unitaires 
 
 ## 🎯 Objectif
 Dans la classe `StringHelper`, nous avons trois fonctions utilitaires à tester :
@@ -7,14 +7,10 @@ Dans la classe `StringHelper`, nous avons trois fonctions utilitaires à tester�
 - **🔄 isAnagram** : Cette fonction prend en entrée deux chaînes de caractères et vérifie si elles contiennent les mêmes caractères, par exemple : _"niche"_ et _"chien"_.
 - **🐪 toCamelCase** : Cette fonction transforme une phrase en une chaîne de caractères au format camelCase. Par exemple, _"Je mange une pomme"_ devient _"JeMangeUnePomme"_.
 
-Votre objectif est d'écrire des tests unitaires pour chaque méthode à l'aide de l'outil Continue, afin de couvrir divers cas de figure, qu'ils soient valides ou non.
+## ✅ Solution
 
-## 🛠️ Instructions
-
-1. Clonez ce projet.
-2. Implémentez les tests unitaires dans la classe `StringHelperTest` pour les trois méthodes mentionnées.
-3. Assurez-vous de tester plusieurs cas pour chaque méthode, en couvrant les situations possibles. Un exemple est déjà fourni pour vous aider à démarrer.
-4. Vérifiez que tous les tests unitaires dans `StringHelperTest` passent avec succès.
+- Vous trouverez dans la classe StringUtilsTest une series de test unitaires générés à l'aide de Continue qui couvrent les différents cas de figures, valides et non valides, ainsi que les cas de bords.
+- Vous pouvez lancer ces derniers pour vérifier leur validité.
 
 
 ### 🚀 Comment exécuter les tests
@@ -23,7 +19,3 @@ Lancez Maven dans le terminal pour exécuter les tests :
 ```bash
 mvn clean test
 ```
-
-## ✅ Critères de validation
-- Tous les tests unitaires écrits réussissent.
-- Les cas de bord (par exemple, une chaîne null, une chaîne vide, etc.) sont bien couverts.
