@@ -11,10 +11,9 @@ Votre objectif est d'écrire des tests unitaires pour chaque méthode à l'aide 
 
 ## 🛠️ Instructions
 
-1. Clonez ce projet.
-2. Implémentez les tests unitaires dans la classe `StringHelperTest` pour les trois méthodes mentionnées.
-3. Assurez-vous de tester plusieurs cas pour chaque méthode, en couvrant les situations possibles. Un exemple est déjà fourni pour vous aider à démarrer.
-4. Vérifiez que tous les tests unitaires dans `StringHelperTest` passent avec succès.
+1. Implémentez les tests unitaires dans la classe `StringHelperTest` pour les trois méthodes mentionnées.
+2. Assurez-vous de tester plusieurs cas pour chaque méthode, en couvrant les situations possibles. Un exemple est déjà fourni pour vous aider à démarrer.
+3. Vérifiez que tous les tests unitaires dans `StringHelperTest` passent avec succès.
 
 
 ### 🚀 Comment exécuter les tests
