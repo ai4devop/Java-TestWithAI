@@ -8,16 +8,16 @@ public class StringHelperTest {
   @Test
   public void isPalindromeTest() {
     Assert.assertTrue(StringHelper.isPalindrome("radar"));
-    // TODO:: Implémenter le reste des cas à tester
+    // TODO:: Add other test cases
   }
 
   @Test
   public void isAnagramTest() {
-    // TODO:: Implémenter les tests
+    // TODO:: Add test cases
   }
 
   @Test
   public void toCamelCaseTest() {
-    // TODO:: Implémenter les tests
+    // TODO:: Add test cases
   }
 }

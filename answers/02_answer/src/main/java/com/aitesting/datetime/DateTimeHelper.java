@@ -7,6 +7,7 @@ import java.time.format.DateTimeFormatter;
 public class DateTimeHelper {
 
   //========================= LocalDate ============================
+  private static final DateTimeFormatter DEFAULT_DATE_FORMATTER = DateTimeFormatter.ISO_LOCAL_DATE; // yyyy-MM-dd
 
   /**
    * Takes a LocalDate object, formats it to yyyy-MM-dd, and returns it as a string
@@ -14,8 +15,7 @@ public class DateTimeHelper {
    * @return string in the format yyyy-MM-dd, e.g., "2024-08-31"
    */
   public static String formatDate(LocalDate date) {
-    // TODO :: function to implement
-    return null;
+    return date.format(DEFAULT_DATE_FORMATTER);
   }
 
   /**
@@ -25,9 +25,9 @@ public class DateTimeHelper {
    * @return LocalDate object
    */
   public static LocalDate parseDate(String dateString) {
-    // TODO :: function to implement
-    return null;
+    return LocalDate.parse(dateString, DEFAULT_DATE_FORMATTER);
   }
+
 
   /**
    * Takes a LocalDate object and formats it using the given pattern if it is valid
@@ -36,11 +36,13 @@ public class DateTimeHelper {
    * @return formatted string based on the input pattern, e.g., "31/08/2024"
    */
   public static String formatDate(LocalDate date, String pattern) {
-    // TODO :: function to implement
-    return null;
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+    return date.format(formatter);
   }
 
   //========================= LocalDateTime ============================
+
+  private static final DateTimeFormatter DEFAULT_DATE_TIME_FORMATTER = DateTimeFormatter.ISO_LOCAL_DATE_TIME; // yyyy-MM-ddThh:mm:ss
 
   /**
    * Takes a LocalDateTime object, formats it to yyyy-MM-ddThh:mm:ss, and returns it as a string
@@ -48,9 +50,9 @@ public class DateTimeHelper {
    * @return string in the format yyyy-MM-ddThh:mm:ss, e.g., "2024-08-31T08:46:00"
    */
   public static String formatDateTime(LocalDateTime date) {
-    // TODO :: function to implement
-    return null;
+    return date.format(DEFAULT_DATE_TIME_FORMATTER);
   }
+
 
   /**
    * Takes a string in the format yyyy-MM-ddThh:mm:ss and converts it to a LocalDateTime object.
@@ -59,9 +61,9 @@ public class DateTimeHelper {
    * @return LocalDateTime object
    */
   public static LocalDateTime parseDateTime(String dateTimeString) {
-    // TODO :: function to implement
-    return null;
+    return LocalDateTime.parse(dateTimeString, DEFAULT_DATE_TIME_FORMATTER);
   }
+
 
   /**
    * Takes a LocalDateTime object and formats it using the desired pattern, if valid
@@ -70,7 +72,7 @@ public class DateTimeHelper {
    * @return formatted string based on the input pattern, e.g., "2024-08-31T08:46:00"
    */
   public static String formatDateTime(LocalDateTime dateTime, String pattern) {
-    // TODO :: function to implement
-    return null;
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+    return dateTime.format(formatter);
   }
 }

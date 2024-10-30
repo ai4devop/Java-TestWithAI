@@ -1,4 +1,4 @@
-# 📝 Exercise 3 - Unit Testing + Mocking ~ 20 minutes
+# 💡 Exercise 3 - TU + Mocking
 
 ## 🎯 Objectives
 In this exercise, you will work with a small customer account management application, _crm_. This application is a simplified proof of concept with limited functionality.
@@ -25,38 +25,13 @@ In the `UserService` class, two methods are already implemented: user search and
   - The `deleteUser(id)` method in `UserRepository` as well as the exception already exist.
   - Once this method is implemented, write unit tests in `UserServiceTest` to cover these cases.
 
+
+## ✅ Answer
+In the `UserServiceTest` and `UserService` classes, you will find the various expected unit tests and functions.
+
 ### 🚀 How to Run the Tests
 Run Maven in the terminal to execute the tests:
 
 ```bash
 mvn clean test
 ```
-
-## ✅ Validation Criteria:
-- The written unit tests pass successfully.
-- Tests cover the various rules, including the check for phone number uniqueness.
-
-### 💡 Mockito Tips:
-Use this cheatsheet to help mock certain common behaviors:
-
-```java
-// Mock a return for a search by ID
-when(userRepository.findById(1L)).thenReturn(new User(...));
-
-// Verify if a function is called a certain number of times
-verify(userRepository, times(n)).findById(1L);
-
-// Verify that the function is never called
-verify(userRepository, never()).deleteUser(1L);
-
-// Check the value of an input argument
-verify(userRepository).save(argThat(user -> user.getName().equals("John")));
-
-// Verify that two objects are equal
-assertEquals(expected, actual);
-
-// Capture an expected exception
-assertThrows(ExpectedException.class, () -> {
-    // Code that should trigger an exception
-});
-

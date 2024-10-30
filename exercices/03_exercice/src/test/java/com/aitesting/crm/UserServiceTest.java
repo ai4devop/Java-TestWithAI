@@ -44,46 +44,44 @@ public class UserServiceTest {
 
   @Test
   public void testGetUserName_UserDoesNotExist() {
-    // TODO :: test à écrire
-    // Comportement si l'utilisateur n'existe pas  à l'appel de userService.getUserName
+    // TODO :: test to write
+    // Behavior if the user does not exist when calling userService.getUserName
   }
 
   @Test
   public void testCreateNewUser_ValidUser() {
-    // TODO :: test à écrire
-    // Comportement si l'utilisateur est valide à l'appel de userService.createNewUser
-
+    // TODO :: test to write
+    // Behavior if the user is valid when calling userService.createNewUser
   }
 
   @Test
   public void testCreateNewUser_MissingInfo() {
-    // TODO :: test à écrire
-    // Comportement si l'utilisateur est incomplèt à l'appel de userService.createNewUser
-
+    // TODO :: test to write
+    // Behavior if the user information is incomplete when calling userService.createNewUser
   }
 
   @Test
   public void testCreateNewUser_PhoneNumberExists() {
-    // TODO :: test à écrire
-    // Comportement si un utilisateur existe déjà avec le même numéro de téléphone à l'appel de userService.createNewUser
+    // TODO :: test to write
+    // Behavior if a user already exists with the same phone number when calling userService.createNewUser
   }
 
   @Test
   public void testDeleteUser_UserDoesNotExist() {
-    // TODO :: test à écrire
-    // Comportement si l'utilisateur n'existe pas à l'appel de userService.deleteUser
+    // TODO :: test to write
+    // Behavior if the user does not exist when calling userService.deleteUser
   }
 
   @Test
   public void testDeleteUser_AdminUser() {
-    // TODO :: test à écrire
-    // Comportement si l'utilisateur est Admin à l'appel de userService.deleteUser
+    // TODO :: test to write
+    // Behavior if the user is an Admin when calling userService.deleteUser
   }
 
   @Test
   public void testDeleteUser_RegularUser() {
-    // TODO :: test à écrire
-    // Comportement si l'utilisateur a le rôle User à l'appel de userService.deleteUser
+    // TODO :: test to write
+    // Behavior if the user has the User role when calling userService.deleteUser
   }
 
 }

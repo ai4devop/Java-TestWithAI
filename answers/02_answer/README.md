@@ -1,4 +1,4 @@
-# 📝 Exercise 2 - TDD ~20 minutes
+# 💡 Exercise 2 - TDD
 
 ## 🎯 Objective
 This exercise is designed to help you get familiar with using AI tools in the practice of test-driven development (TDD).
@@ -6,12 +6,6 @@ This exercise is designed to help you get familiar with using AI tools in the pr
 In TDD, unit tests are written before even writing the code itself. These tests define the expected behavior of the functions. Once the code is implemented, the tests validate its functionality.
 
 In this exercise, you’ll work with the `DateTimeHelper` class, which provides utility functions for date processing with or without time. You will first write the tests for the desired functions, then implement the code for those functions.
-
-## 🛠️ Instructions
-
-1. Go to the `DateTimeHelper` file to review the method skeletons created, and check `DateTimeHelperTest` to see the tests already implemented.
-2. Follow the steps below to implement the various functions.
-3. Run the existing tests along with the ones you’ll write.
 
 ## 🐾 Steps
 
@@ -46,13 +40,12 @@ In this second part, you will create tests for the `LocalDateTime` processing me
   - Write a test `testFormatDateTime_WithPattern` that checks that a given `LocalDateTime` and format pattern (e.g., `dd/MM/yyyy HH:mm:ss`) produce a formatted string, e.g., _"31/08/2024 08:46:00"_.
   - Then implement the `formatDateTime(LocalDateTime dateTime, String pattern)` function to pass the test.
 
+## ✅ Answer
+In the `DateTimeHelper` and `DateTimeHelperTest` classes, you will find the various functions and tests created for this exercise.
+
 ### 🚀 How to Run the Tests
 Run Maven in the terminal to execute the tests:
 
 ```bash
 mvn clean test
 ```
-
-## ✅ Validation Criteria:
-- The processing functions for LocalDate are implemented and existing tests pass.
-- The tests and functions for LocalDateTime processing are implemented and pass.

@@ -32,9 +32,9 @@ public class UserService {
   }
 
   public void deleteUser(Long id) {
-    // TODO :: Implémenter cette méthode
-    // Si l'utilisateur n'existe pas, alors rien ne se passe
-    // si l'utilisateur existe mais a le rôle admin, alors renvoyer une exception NotAllowedException
+    // TODO :: Implement this method
+    // If the user does not exist, then do nothing
+    // If the user exists but has the admin role, then throw a NotAllowedException
   }
 
 }

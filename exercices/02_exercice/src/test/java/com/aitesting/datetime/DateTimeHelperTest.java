@@ -46,28 +46,27 @@ public class DateTimeHelperTest {
 
   @Test
   public void testFormatDateTime_ValidDateTime() {
-    // TODO :: test à implémenter, prendre en entrée une LocalDateTime
-    // et en sortir une String au format yyyy-MM-ddThh:mm:ss
+    // TODO :: Test to implement: takes a LocalDateTime as input
+    // and returns a String in the format yyyy-MM-ddThh:mm:ss
   }
 
   @Test
   public void testParseDateTime_ValidDateTime() {
-    // TODO :: test à implémenter, prendre en entrée une String
-    //  format yyyy-MM-ddThh:mm:ss et en sort une LocalDateTime
+    // TODO :: Test to implement: takes a String as input
+    // in the format yyyy-MM-ddThh:mm:ss and returns a LocalDateTime
   }
 
   @Test
   public void testParseDateTime_InvalidDateTime() {
-    // TODO :: test à implémenter, prendre en entrée une String
-    //  format invalid, ex : "invalid-date-time" et renvoit une exception DateTimeParseException
+    // TODO :: Test to implement: takes a String as input
+    // in an invalid format, e.g., "invalid-date-time", and throws a DateTimeParseException
   }
-
 
   @Test
   public void testFormatDateTime_WithPattern() {
-    // TODO :: test à implémenter, prendre en entrée une LocalDateTime
-    // et une String pattern. Le pattern, si valide correpond au format de dateTime voulu, ex :  "yyyy-MM-ddThh:mm:ss"
-    // La fonction renvera une String au format donnée en entrée
-   }
+    // TODO :: Test to implement: takes a LocalDateTime as input
+    // and a String pattern. If the pattern is valid, it corresponds to the desired dateTime format, e.g., "yyyy-MM-ddThh:mm:ss".
+    // The function returns a String in the specified format.
+  }
 
 }

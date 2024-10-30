@@ -32,7 +32,7 @@ public class StringHelper {
     String[] words = input.strip().toLowerCase().split("\\s+");
     StringBuilder camelCase = new StringBuilder();
 
-    // Parcour les mots et mets la première lettre en majuscule
+    // Loops through the words and capitalises the first word
     for (String word : words) {
       if (!word.isBlank()) {
         camelCase.append(Character.toUpperCase(word.charAt(0)))
