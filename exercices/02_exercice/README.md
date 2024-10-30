@@ -14,7 +14,7 @@ Dans cet exercice, vous travaillerez avec la classe `DateTimeHelper`, qui offre 
 3. Suivez les étapes ci-dessous pour implémenter les différentes fonctions.
 4. Lancez les tests existants et ceux que vous aurez écrits.
 
-## 📝 Étapes
+## 🐾 Étapes
 
 ### 1. Rédaction de fonctions à partir de tests unitaires
 Pour la première partie de cet exercice, vous allez implémenter des fonctions de traitement pour `LocalDate`. Dans la classe `DateTimeHelperTest`, une série de tests unitaires définissent le comportement attendu pour trois fonctions. Utilisez ces tests comme guide pour implémenter les méthodes avec l’aide de Continue.
